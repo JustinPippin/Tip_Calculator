@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, blue, lightblue);
+}
+
+#container {
+    background-color: white;
+    height: 525px;
+    width: 360px;
+    margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and autopmatically calculate the left and right margin to centert it horizontally */
+    border-radius: 20px; /* Round off the edges of the element */
+    box-shadow: 10px 10px 20px black; /* Box shadow properties: horizontal offset (required), vertical offset (required), blur (optional), spread (optional), color (optional) */
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal
+}
+
+p {
+    padding-left: 20px;
+}
+
+#billAmount {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#serviceQuality {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#peoplePaying {
+    margin-left: 20px;
+    font-size: 12px;
+}
