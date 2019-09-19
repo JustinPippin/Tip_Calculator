@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, blue, lightblue);
+    background: linear-gradient(to left, blue, lightblue);
 }
 
 #container {
@@ -20,24 +20,41 @@ h1 {
     padding: 10px 10px;
     margin: 0;
     font-size: 30px;
-    font-weight: normal
+    font-weight: normal;
 }
 
 p {
     padding-left: 20px;
 }
 
-#billAmount {
+#billAmount, #serviceQuality, #numPeople { /* Elements with the ID of billAmount and serviceQuality sill both recieve this styles */
     margin-left: 20px;
+    margin-bottom: 25px;
     font-size: 12px;
 }
 
-#serviceQuality {
-    margin-left: 20px;
-    font-size: 12px;
+#billAmount:focus, #serviceQuality:focus, #numPeople:focus {
+    border: solid 3px blue;
+    outline: none;
 }
 
-#peoplePaying {
-    margin-left: 20px;
-    font-size: 12px;
+button {
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 300px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+button:focus {
+    outline: none;
 }

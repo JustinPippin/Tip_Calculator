@@ -19,12 +19,29 @@
         <div>
             <!-- Form to hold our calculator inputs -->
             <form>
+                <!-- Text input to get the amount of the bill -->
                 <p>How much was your bill?</p>
                 <input id="billAmount" type="text" placeholder="Bill Amount">
+
                 <p>How was your service?</p>
-                <input id="serviceQuality" type="text" placeholder="Service Quality">
+                <!-- Drop down menu to select service quality -->
+                <select id="serviceQuality">
+                    <option selected disabled value="0">-- Choose an Option --</option>
+                    <option value="0.3">Outstanding - 30%</option>
+                    <option value="0.25">Great - 25%</option>
+                    <option value="0.2">Good - 20%</option>
+                    <option value="0.15">Okay - 15%</option>
+                    <option value="0.1">Bad - 10%</option>
+                    <option value="0.05">Terrible - 5%</option>
+                </select>
+
+                <!-- Text input to get the number of people sharing the bill -->
                 <p>How many people are sharing the bill?</p>
-                <input id="peoplePaying" type="text" placeholder="People Paying">
+                <input id="numPeople" type="text" placeholder="Number of People">
+
+                <!-- Button to calcuate the tip -->
+                <button type="button"
+                id="calculateTip">Calculate!</button>
             </form>
         </div>
     </div>
